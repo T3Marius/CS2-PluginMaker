@@ -1,6 +1,15 @@
 # CS2-PluginMaker
 Make sure you read this before installing the plugin so you won't make mistakes.
+# MainConfig (not really that important)
+```
+[Tag]
+Tag = "{red}[Plugin Maker]{default}"
 
+[Settings]
+EnableAnnouncements = false
+EnableCommands = false
+EnableMenu = true
+```
 # Commands Config
 ```
 [[Commands]]
