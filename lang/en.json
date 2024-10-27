@@ -1,0 +1,3 @@
+{
+  "command.no.permission": "You don't have {red}permission{default} to use this command."
+}
