@@ -17,6 +17,11 @@ public static class MenuClass
 {
     public static void Load()
     {
+        if (!MainConfig.Settings.EnableMenu)
+        {
+            Instance.Logger.LogInformation("MENUS ARE DISABLED FROM CONFIG");
+            return;
+        }
         var config = Menu_Config.Load();
 
         foreach (var menu in config.Menus.Values)

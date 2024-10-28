@@ -5,6 +5,7 @@ using CounterStrikeSharp.API.Modules.Commands;
 using static PluginMaker.PluginMaker;
 using static PluginMaker.Main_Config;
 using CounterStrikeSharp.API;
+using Microsoft.Extensions.Logging;
 
 namespace PluginMaker;
 
@@ -12,6 +13,11 @@ public static class Commands
 {
     public static void Load()
     {
+        if (!MainConfig.Settings.EnableCommands)
+        {
+            Instance.Logger.LogInformation("COMMANDS ARE DISABLED FROM CONFIG");
+            return;
+        }
         var commmandsList = CommandsConfigLoader.CommandsList;
 
         foreach (var command in commmandsList)
