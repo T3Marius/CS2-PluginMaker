@@ -1,7 +1,7 @@
 # CS2-PluginMaker
 Make sure you read this before installing the plugin so you won't make mistakes.
 # MainConfig (not really that important)
-```
+```ini
 [Tag]
 Tag = "{red}[Plugin Maker]{default}"
 
@@ -11,7 +11,7 @@ EnableCommands = false
 EnableMenu = true
 ```
 # Commands Config
-```
+```ini
 [[Commands]]
 Name = "discord"
 Description = "Shows server discord"
@@ -32,7 +32,7 @@ Permissions = ["@css/root"]
 
 ```
 # Announcements Config
-```
+```json
 {
   "WelcomeMessage": {
     "Message": "Welcome to the server, {playername}!",
@@ -56,7 +56,7 @@ Permissions = ["@css/root"]
 }
 ```
 # Menus Config
-```
+```json
 {
   "Menus": {
     "menu1": {
