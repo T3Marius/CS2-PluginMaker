@@ -21,7 +21,7 @@ ClientCommand = ""
 ServerCommand = ""
 Permissions = []
 
-[[Commands]] // add this line for a new command.
+[[Commands]] # add this line for a new command.
 Name = "ban"
 Description = "bans menu"
 Message = ""
